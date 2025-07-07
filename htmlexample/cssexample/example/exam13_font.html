@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글자(문자) 스타일 속성</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <style type="text/css">
         .fontstyle {
             font-size: 25px;
@@ -21,14 +27,27 @@
         #font4 {
             font-weight: bold;
         }
+        .oswald {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-style: normal;
+        }
+        .nanum-pen-script-regular {
+        font-family: "Nanum Pen Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        }
     </style>
+    
 </head>
 <body>
-    <h2>글자(문자) 스타일 속성</h2>
+    <h2 class="nanum-pen-script-regular">글자(문자) 스타일 속성</h2>
     <div class="fontstyle">Rather be dead than cool.</div>
-    <div class="fontstyle" id="font1">Rather be dead than cool.</div>
-    <div class="fontstyle" id="font2">Rather be dead than cool.</div>
+    <div class="fontstyle oswald" id="font1">Rather be dead than cool.</div>
+    <div class="fontstyle oswald" id="font2">Rather be dead than cool.</div>
     <div class="fontstyle" id="font3">Rather be dead than cool.</div>
-    <div class="fontstyle" id="font4">Rather be dead than cool.</div>
+    <div class="fontstyle oswald" id="font4">Rather be dead than cool.</div>
 </body>
 </html>
