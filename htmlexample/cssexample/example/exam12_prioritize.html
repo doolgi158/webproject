@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자의 우선 순위</title>
+    <style type="text/css">
+        p {
+            font-size: 25px;
+            font-weight: bold;
+            color: #8041d9;
+        }
+        .text {
+            font-size: 15px;
+            font-family: 휴먼옛체, 맑은고딕;
+            color: rgb(255, 0, 121);
+        }
+        #font {
+            font-size: 35px;
+            font-family: "Times New Roman", "Comic Sans MS";
+            color: gray;
+        }
+        .background {
+            background-color: #8beb78;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>[CSS를 이용한 폰트]</h1>
+    <p class="text" id="font">Good Morning</p>
+    <p class="text background">안녕하세요.</p>
+    <p class="text" id="font" style="color:red; font-size:50px;">Good Morning</p>
+    <p>안녕하세요.</p>
+    <span class="text" id="font">안녕하세요.</span>
+</body>
+</html>

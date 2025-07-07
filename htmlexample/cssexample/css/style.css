@@ -1,0 +1,13 @@
+body {
+    background: rgb(136, 228, 245);
+}
+
+h1 {
+    font-size: 48px;
+    color: rgb(248, 71, 18);
+    font-style: italic;
+}
+
+p {
+    font-size: 24px;
+}
