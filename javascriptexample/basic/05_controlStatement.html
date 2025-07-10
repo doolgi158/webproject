@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/05_controlStatement.css" />
+</head>
+<body>
+    <h2>성적 구하기</h2>
+    <div>
+        <input type="text" id="korea" placeholder="국어점수(kor)">
+        <input type="text" id="english" placeholder="영어점수(eng)">
+        <input type="text" id="math" placeholder="수학점수(math)">
+        <button type="button" onclick="grade()">성적 구하기</button>
+        <br/>
+        <input type="text" id="sum" placeholder="합계" readonly>
+        <input type="text" id="average" placeholder="평균" readonly>
+        <input type="text" id="grade-abc" placeholder="학점" readonly>
+    </div>
+    <hr/>
+    
+    <h2>숫자 맛추기 게임</h2>
+    <div>
+        <p class="random">[참고] 1~10 사이의 난수 생성: Math.floor(Math.random() * 10) + 1;</p>
+        <p>이 게임은 컴퓨터가 무작위로 생성한 숫자를 맞추는 게임입니다. 숫자는 1부터 10사이의 정수입니다.</p>
+        <div>숫자: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="guessnumber">
+            <button type="button" onclick="match()">확인</button>
+        </div>
+        <div>추측 횟수:&nbsp;&nbsp;
+            <input type="text" id="countnumber" readonly>&nbsp;&nbsp;힌트:&nbsp;&nbsp;
+            <input type="text" id="hint" readonly>
+        </div>        
+    </div>
+    <hr/>
+    
+    <h2>간단한 반복문 실습</h2>
+    <div>1. 반복문을 사용하여 h1~h6 태그로 Hello JavaScript를 출력해 주세요.</div>
+    <div>2. 반복문을 사용하여 이미지를 출력해 주세요.</div>
+    <button type="button" onclick="display()">출력</button>
+    <div id="h1toh6"></div>
+    <hr/>
+
+    <h2>구구단 출력</h2>
+    <button type="button" onclick="gugudan()">출력</button>
+    <table>
+        <tr  id="gugutable">
+        </tr>
+    </table>
+
+    <script src="../js/05_controlStatement.js"></script>
+</body>
+</html>

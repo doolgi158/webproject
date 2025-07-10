@@ -1,0 +1,11 @@
+.random {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+img {
+    display: inline-block;
+    margin-left: 10px;
+    width: 400px;
+    height: 300px;
+}
