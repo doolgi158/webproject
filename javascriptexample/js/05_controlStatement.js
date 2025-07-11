@@ -49,9 +49,9 @@ function match() {
     console.log(random);
 
     if(input.value > random){
-        hinttext.value = "숫자가 높습니다."
+        hinttext.value = "입력한 숫자가 높습니다."
     }else if(input.value < random){
-        hinttext.value = "숫자가 낮습니다."
+        hinttext.value = "입력한 숫자가 낮습니다."
     }else {
         hinttext.value = "축하합니다. 정답입니다."
     }
@@ -74,16 +74,15 @@ function display() {
 
 function gugudan() {
     const gugu = document.getElementById("gugutable");
-    
-    for(let i = 1; i < 10; i++){
-        gugu.innerHTML += `<th>${i}단</th>`;
-    }
-    for(let i = 1; i < 10; i++){
-        gugu.innerHTML += "<tr>";
+    let data = "";  
+    for(let i = 2; i < 10; i++){
+        data += "<table>";
+        data += `<tr><th>${i}단</th></tr>`;
         for(let j = 1; j < 10; j++){
-            k = i * j;
-            gugu.innerHTML += `<td>${j} x ${i} = ${k}</td>`;
+            data += `<tr><td>${i} x ${j} = ${i * j}</td></tr>`;
         }
-        gugu.innerHTML += "</tr>";
+        data += "</table>";
     }
+
+    gugu.innerHTML = data;
 }

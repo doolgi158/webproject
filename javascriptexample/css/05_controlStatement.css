@@ -9,3 +9,24 @@ img {
     width: 400px;
     height: 300px;
 }
+
+#gugutable {
+    display: flex;
+    gap: 10px;
+}
+#gugutable th {
+    background-color: rgb(219, 219, 219)
+}
+#gugutable td {
+    border: 1px dotted black;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
