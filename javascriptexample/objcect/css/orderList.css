@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+}
+tr, td, th{
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+tr:nth-child(5) {
+    text-align: center;
+}
+input#book1, input#book2, input#book3, input#abook{
+    width: 50px;
+}
+input#sbook1, input#sbook2, input#sbook3, input#sabook{
+    width: 100px;
+}
+caption {
+    font-size: 20px;
+}
+button{
+    margin-top: 10px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/orderList.css" />
+</head>
+<body>
+    <h2>서적 주문서 작성</h2>
+    <table>
+        <caption>서적 주문서</caption>
+        <tr>
+            <th>책 제목</th>
+            <th>가격</th>
+            <th>수량</th>
+            <th>합계</th>
+        </tr>
+        <tr>
+            <td>멀티미디어 배움터 2.0</td>
+            <td>25,000원</td>
+            <td><input type="number" id="book1" value="0" min="0"/></td>
+            <td><input type="number" id="sbook1" value="0" readonly>원</td>
+        </tr>
+        <tr>
+            <td>모바일 멀티미디어</td>
+            <td>27,000원</td>
+            <td><input type="number" id="book2" value="0" min="0" /></td>
+            <td><input type="number" id="sbook2" value="0" readonly>원</td>
+        </tr>
+        <tr>
+            <td>자바입문: 이론과 실습</td>
+            <td>25,000원</td>
+            <td><input type="number" id="book3" value="0" min="0" /></td>
+            <td><input type="number" id="sbook3" value="0" readonly>원</td>
+        </tr>
+        <tr>
+            <td>총&nbsp&nbsp&nbsp&nbsp합&nbsp&nbsp&nbsp&nbsp계</td>
+            <td></td>
+            <td><input type="number" id="abook" value="0" min="0" readonly/></td>
+            <td><input type="number" id="sabook" value="0" readonly>원</td>
+        </tr>
+    </table>
+    <button type="button" id="getSum">합계계산</button>
+    <button type="button" id="clear">초기화</button>
+    <script src="../js/orderList.js"></script>
+</body>
+</html>
